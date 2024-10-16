@@ -1,0 +1,6 @@
+name: BetterGUI
+version: '${project.version}'
+main: dev.felnull.bettergui.BetterGUI
+author: Arisa9006
+
+api-version: '1.16'
