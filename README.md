@@ -1,0 +1,3 @@
+このAPIはMinecraftのPaper 1.16.5環境において
+簡単に見やすいGUIを作成するためのものです
+使い方はSampleGUIとSampleItemを参照してください
