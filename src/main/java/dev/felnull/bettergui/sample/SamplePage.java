@@ -1,7 +1,7 @@
 package dev.felnull.bettergui.sample;
 
-import dev.felnull.bettergui.GUIPage;
-import dev.felnull.bettergui.InventoryGUI;
+import dev.felnull.bettergui.core.GUIPage;
+import dev.felnull.bettergui.core.InventoryGUI;
 import org.bukkit.ChatColor;
 
 public class SamplePage extends GUIPage {

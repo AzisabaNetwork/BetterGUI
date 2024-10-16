@@ -1,4 +1,4 @@
-package dev.felnull.bettergui;
+package dev.felnull.bettergui.core;
 
 import net.kyori.adventure.text.Component;
 import org.bukkit.event.inventory.InventoryClickEvent;

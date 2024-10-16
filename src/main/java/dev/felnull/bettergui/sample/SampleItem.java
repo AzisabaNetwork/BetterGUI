@@ -1,18 +1,13 @@
 package dev.felnull.bettergui.sample;
 
-import dev.felnull.bettergui.GUIItem;
-import dev.felnull.bettergui.InventoryGUI;
+import dev.felnull.bettergui.core.GUIItem;
+import dev.felnull.bettergui.core.InventoryGUI;
 import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.format.NamedTextColor;
-import net.kyori.adventure.text.format.TextColor;
-import net.kyori.adventure.util.RGBLike;
-import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class SampleItem extends GUIItem {

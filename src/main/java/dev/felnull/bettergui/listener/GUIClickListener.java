@@ -1,11 +1,10 @@
 package dev.felnull.bettergui.listener;
 
 import dev.felnull.bettergui.BetterGUI;
-import dev.felnull.bettergui.GUIItem;
-import dev.felnull.bettergui.GUIPage;
+import dev.felnull.bettergui.core.GUIItem;
+import dev.felnull.bettergui.core.GUIPage;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.inventory.ClickType;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 

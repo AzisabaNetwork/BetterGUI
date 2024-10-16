@@ -1,4 +1,4 @@
-package dev.felnull.bettergui;
+package dev.felnull.bettergui.core;
 
 import org.bukkit.entity.Player;
 

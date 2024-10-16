@@ -1,5 +1,6 @@
-package dev.felnull.bettergui;
+package dev.felnull.bettergui.core;
 
+import dev.felnull.bettergui.BetterGUI;
 import dev.felnull.bettergui.listener.GUIClickListener;
 import org.bukkit.Bukkit;
 import org.bukkit.event.HandlerList;
