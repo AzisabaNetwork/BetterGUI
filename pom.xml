@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>felnull.dev</groupId>
+  <groupId>dev.felnull</groupId>
   <artifactId>bettergui</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>jar</packaging>
 
   <name>BetterGUI</name>
@@ -62,6 +62,10 @@
           <id>felnull</id>
           <name>felnull maven</name>
           <url>https://maven.felnull.dev/</url>
+      </repository>
+      <repository>
+          <id>net.azisaba</id>
+          <url>https://repo.azisaba.net/repository/maven-public/</url>
       </repository>
   </repositories>
 
