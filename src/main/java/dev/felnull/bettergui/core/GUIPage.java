@@ -5,11 +5,12 @@ import dev.felnull.bettergui.listener.GUIClickListener;
 import org.bukkit.Bukkit;
 import org.bukkit.event.HandlerList;
 import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.HashMap;
 
-public abstract class GUIPage {
+public abstract class GUIPage implements InventoryHolder {
     private final BetterGUI plugin = BetterGUI.getInstance();
     public InventoryGUI gui;
     public Inventory inventory;
@@ -17,7 +18,7 @@ public abstract class GUIPage {
     private HashMap<Integer, GUIItem> items = new HashMap<>();
 
     public GUIPage(InventoryGUI gui, String name, int size) {
-        inventory = Bukkit.createInventory(null, size, name);
+        inventory = Bukkit.createInventory(this, size, name);
         this.gui = gui;
         listener = new GUIClickListener(this);
         Bukkit.getPluginManager().registerEvents(listener, plugin);
