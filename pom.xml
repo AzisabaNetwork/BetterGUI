@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>dev.felnull</groupId>
-  <artifactId>bettergui</artifactId>
+  <artifactId>BetterGUI</artifactId>
   <version>1.0.3</version>
   <packaging>jar</packaging>
 
