@@ -59,10 +59,5 @@ public abstract class GUIPage implements InventoryHolder {
     public void onOutsideWindowLeftClick(InventoryClickEvent e){}
 
     public void onOutsideWindowClick(InventoryClickEvent e){}
-
-    public void onOutsideWindowRightShiftClick(InventoryClickEvent e){}
-
-    public void onOutsideWindowLeftShiftClick(InventoryClickEvent e){}
-
-    public void onOutsideWindowShiftClick(InventoryClickEvent e){}
+    
 }
