@@ -79,6 +79,18 @@ public class GUIClickListener implements Listener {
                     page.onOutsideWindowLeftClick(e);
                 }
                 break;
+            case SHIFT_RIGHT:
+                if(e.getSlot() == -999){
+                    page.onOutsideWindowShiftClick(e);
+                    page.onOutsideWindowRightShiftClick(e);
+                }
+                break;
+            case SHIFT_LEFT:
+                if(e.getSlot() == -999){
+                    page.onOutsideWindowShiftClick(e);
+                    page.onOutsideWindowLeftShiftClick(e);
+                }
+                break;
         }
 
         e.setCancelled(true);
