@@ -42,12 +42,6 @@ public class GUIClickListener implements Listener {
                 case SHIFT_LEFT:
                     item.onShiftLeftClick(e);
                     break;
-                case WINDOW_BORDER_RIGHT:
-                    item.onWindowBorderRightClick(e);
-                    break;
-                case WINDOW_BORDER_LEFT:
-                    item.onWindowBorderLeftClick(e);
-                    break;
                 case DROP:
                     item.onDropClick(e);
                     break;
@@ -64,8 +58,30 @@ public class GUIClickListener implements Listener {
                     item.onCreativeClick(e);
                     break;
             }
-            e.setCancelled(true);
+            switch (e.getClick()){
+                case WINDOW_BORDER_RIGHT:
+                    page.onWindowBorderRightClick(e);
+                    break;
+                case WINDOW_BORDER_LEFT:
+                    page.onWindowBorderLeftClick(e);
+                    break;
+                case RIGHT:
+                    if(e.getSlot() == -999){
+                        page.onOutsideWindowClick(e);
+                        page.onOutsideWindowRightClick(e);
+                    }
+                    break;
+                case LEFT:
+                    if(e.getSlot() == -999){
+                        page.onOutsideWindowClick(e);
+                        page.onOutsideWindowLeftClick(e);
+                    }
+                    break;
+            }
+
         }
+
+        e.setCancelled(true);
     }
 
     @EventHandler

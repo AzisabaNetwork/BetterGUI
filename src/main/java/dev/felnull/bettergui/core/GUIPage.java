@@ -4,6 +4,7 @@ import dev.felnull.bettergui.BetterGUI;
 import dev.felnull.bettergui.listener.GUIClickListener;
 import org.bukkit.Bukkit;
 import org.bukkit.event.HandlerList;
+import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
@@ -48,4 +49,14 @@ public abstract class GUIPage implements InventoryHolder {
     public void close(){
         HandlerList.unregisterAll(listener);
     }
+
+    public void onWindowBorderRightClick(InventoryClickEvent e){}
+
+    public void onWindowBorderLeftClick(InventoryClickEvent e){}
+
+    public void onOutsideWindowRightClick(InventoryClickEvent e){}
+
+    public void onOutsideWindowLeftClick(InventoryClickEvent e){}
+
+    public void onOutsideWindowClick(InventoryClickEvent e){}
 }

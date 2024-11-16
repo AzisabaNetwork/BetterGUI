@@ -26,8 +26,6 @@ public class GUIItem {
     public void onDropClick(InventoryClickEvent e){}
     public void onControlDropClick(InventoryClickEvent e){}
     public void onOffhandClick(InventoryClickEvent e){}
-    public void onWindowBorderRightClick(InventoryClickEvent e){}
-    public void onWindowBorderLeftClick(InventoryClickEvent e){}
     public void onNumberClick(InventoryClickEvent e){}
     public void onCreativeClick(InventoryClickEvent e){}
 
