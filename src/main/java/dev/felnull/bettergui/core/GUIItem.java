@@ -21,6 +21,7 @@ public class GUIItem {
     public void onLeftClick(InventoryClickEvent e){}
     public void onMiddleClick(InventoryClickEvent e){}
     public void onDoubleClick(InventoryClickEvent e){}
+    public void onShiftClick(InventoryClickEvent e){}
     public void onShiftRightClick(InventoryClickEvent e){}
     public void onShiftLeftClick(InventoryClickEvent e){}
     public void onDropClick(InventoryClickEvent e){}

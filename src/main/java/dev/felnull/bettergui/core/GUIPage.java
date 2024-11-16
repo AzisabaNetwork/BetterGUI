@@ -59,5 +59,5 @@ public abstract class GUIPage implements InventoryHolder {
     public void onOutsideWindowLeftClick(InventoryClickEvent e){}
 
     public void onOutsideWindowClick(InventoryClickEvent e){}
-    
+
 }

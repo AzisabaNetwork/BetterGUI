@@ -37,9 +37,11 @@ public class GUIClickListener implements Listener {
                     item.onDoubleClick(e);
                     break;
                 case SHIFT_RIGHT:
+                    item.onShiftClick(e);
                     item.onShiftRightClick(e);
                     break;
                 case SHIFT_LEFT:
+                    item.onShiftClick(e);
                     item.onShiftLeftClick(e);
                     break;
                 case DROP:
