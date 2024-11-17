@@ -88,7 +88,7 @@ public class GUIClickListener implements Listener {
 
     @EventHandler
     public void onClose(InventoryCloseEvent e){
-        if(e.getInventory() != page.inventory) return;
+        if(e.getView().getTopInventory() != page.inventory) return;
         page.close();
     }
 }
