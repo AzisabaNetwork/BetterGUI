@@ -42,9 +42,9 @@ public class GUIItem {
         itemStack.setItemMeta(meta);
     }
 
-    public void setCMD(int custommodeldata) {
+    public void setCMD(int customModelData) {
         ItemMeta meta = itemStack.getItemMeta();
-        meta.setCustomModelData(custommodeldata);
+        meta.setCustomModelData(customModelData);
         itemStack.setItemMeta(meta);
     }
 }
