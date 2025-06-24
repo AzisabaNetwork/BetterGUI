@@ -17,6 +17,7 @@ public abstract class GUIPage implements InventoryHolder {
     public Inventory inventory;
     public GUIClickListener listener;
     private HashMap<Integer, GUIItem> items = new HashMap<>();
+    public ItemStack cursorItem = null;
 
     public GUIPage(InventoryGUI gui, String name, int size) {
         this.inventory = Bukkit.createInventory(this, size, name);

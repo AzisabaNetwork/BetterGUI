@@ -7,6 +7,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
+import org.bukkit.inventory.ItemStack;
 
 public class GUIClickListener implements Listener {
     private final GUIPage page;
@@ -60,6 +61,9 @@ public class GUIClickListener implements Listener {
                     item.onCreativeClick(e);
                     break;
             }
+        }else {
+            ItemStack cursor = e.getCursor();
+            page.cursorItem = (cursor != null && cursor.getType() != org.bukkit.Material.AIR) ? cursor.clone() : null;
         }
 
         switch (e.getClick()){
